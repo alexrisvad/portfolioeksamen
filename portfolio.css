@@ -1,0 +1,272 @@
+/*------------------------- Generelt -------------------------*/
+
+body {
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box
+}
+
+html {
+    background-color: #F8F8F8;
+}
+
+
+/*------------------------- Menu bar -------------------------*/
+
+header {
+    background-color: #F8F8F8;
+    display: flex;
+    font-size: 1.5rem;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    top: 0vw;
+    width: 100%;
+    position: sticky;
+    z-index: 999;
+}
+
+
+.hidden {
+    transform: translateX(100%);
+    opacity: 0;
+}
+
+
+#menuknap {
+    color: #265756;
+    display: flex;
+    position: relative;
+    top: 10px;
+    right: -90vw;
+    cursor: pointer;
+}
+
+#menuknap:hover {
+    color: #DDAC3B;
+}
+
+#menu {
+    list-style-type: none;
+    transition: transform .3s;
+    display: inline-block;
+    position: absolute;
+    background-color: #F8F8F8;
+    min-width: 100%;
+    padding-bottom: 15px;
+    padding-left: 20px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    line-height: 40px;
+    font-family: 'Work Sans', sans-serif;
+    color: #265756;
+}
+
+nav a:visited {
+    color: #265756;
+}
+
+nav a:hover {
+    color: #DDAC3B;
+}
+
+nav a:first-child {
+    display: inline;
+}
+
+
+/*----------------------------- Footer -----------------------------*/
+
+footer {
+    background-color: #265756;
+    padding-bottom: 1px;
+    padding-top: 30px;
+}
+
+.fa {
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px 10px;
+}
+
+.fa-facebook {
+    background: #265756;
+    color: #F8F8F8;
+}
+
+.fa-instagram {
+    background: #265756;
+    color: #F8F8F8;
+}
+
+#footer_icons {
+    display: flex;
+    justify-content: center;
+
+}
+
+#footer_icons a:hover {
+    color: #DDAC3B;
+    transition: 0.6s ease;
+}
+
+#copyrights {
+    color: #DDAC3B;
+    text-align: center;
+    font-family: 'Work Sans', sans-serif;
+    font-size: .8rem;
+}
+
+/*----------------------------- Om -----------------------------*/
+
+h1 {
+    color: #DDAC3B;
+    text-align: center;
+    position: relative;
+    font-size: 2rem;
+    font-family: 'Work Sans', sans-serif;
+    padding: 30px;
+}
+
+img {
+    width: 100%;
+}
+
+.section_wrapper {
+    margin: 20px;
+}
+
+#portfolio {
+    padding-bottom: 100px;
+}
+
+.box {
+    display: inline-block;
+    background-size: cover;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.4s ease-out;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.box img {
+    top: 0;
+    left: 0;
+    z-index: 0;
+    transition: all 0.4s ease-out;
+}
+
+h2 {
+    font-family: 'Work Sans', sans-serif;
+    color: #265756;
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 10px;
+    padding-bottom: 10px;
+}
+
+.box:hover {
+    box-shadow: 0px 35px 77px -17px rgba(0, 0, 0, 0.64);
+    transform: scale(1.05);
+}
+
+/*---------------------- Scroll to top button ----------------------*/
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #DDAC3B;
+    color: #265756;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: 'Work Sans', sans-serif;
+    transition: 0.6s ease;
+}
+
+#myBtn:hover {
+    color: #F8F8F8;
+}
+
+
+/*----------------------------- Media Q's -----------------------------*/
+
+
+@media only screen and (min-width: 600px) {
+
+    .section_wrapper .row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 20px;
+
+    }
+
+    .box {
+        margin-bottom: 0;
+    }
+}
+
+
+
+@media only screen and (min-width: 800px) {
+
+
+    #menuknap {
+        display: none;
+    }
+
+    #menu.hidden {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    #menu li {
+        display: inline-block;
+    }
+
+    #menu {
+        position: relative;
+        padding-left: 0px;
+    }
+
+    header {
+        justify-content: center;
+        padding-bottom: 0vw;
+        padding-top: 0vw;
+    }
+
+
+    nav a {
+        margin: 20px;
+    }
+
+}
+
+
+@media only screen and (min-width: 1100px) {
+
+    .section_wrapper .row {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 20px;
+
+    }
+
+    .box {
+        margin-bottom: -200px;
+    }
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grundlæggende animation - Alexander Risvad</title>
+    <link rel="stylesheet" href="animation.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Roboto&family=Work+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div id="menuknap">☰</div>
+            <ul id="menu" class="hidden">
+                <li><a href="forside.html">Forside</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="om_mig.html">Om mig</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Grundlæggende animation</h1>
+
+        <section id="section_1">
+            <div class="section_wrapper">
+                <div class="col">
+                    <h2>Formål</h2>
+                    <p>Formålet i dette tema var at lære at fremstille interaktive brugergrænseflader der engagerer og motiverer brugen. Vi blev for første gang introduceret til programmeringssproget ”javascript”, som bruges til at kode mere avanceret og dynamiske websites. Vi skulle bruge javascript til at arbejde sammen med css animationer, til at kode et lille spil. Konceptet og ideen bag spillet, skulle man selv finde frem til. Disse færdighederne ville senere kunne bruges til at udvikle mere avanceret websites eksempelvis burgermenuer, slideshows og andet.</p>
+                    <br>
+
+                    <br>
+                    <h2>Proces</h2>
+                    <h3>Ide og udviklingsmetoder</h3>
+                    <p>I den første del af temaet skulle vi bruge specielle idegenererings-teknikker, til at brainstorme ideer og koncept til spillet. Vi benyttede os af teknikker som ”mindmaps” og ”cross-metoden”, der gjorde det lettere at fremme de kreative ideer. Da ideen til spillet var fastlagt, skulle vi skitsere spillet i en papir-prototype. Mine mindmaps pegede i retning mod et skydespil og da jeg få uger forinden, havde været ude og skyde lerduer, blev den endelige ide til et Fruit Ninja inspirerende spil, hvor formålet var at skyde lerduer. Vi lavede derefter et aktivitetsdiagram, som havde til hensigt, at beskrive de handlinger og beslutninger man kan træffe i den givende rækkefølge.</p>
+                </div>
+
+                <div class="col">
+                    <img src="images/animation_il1.png" alt="Grundlæggende web">
+                </div>
+            </div>
+        </section>
+
+        <section id="section_2">
+            <div class="section_wrapper">
+                <div class="col">
+                    <img src="images/animation_il2.png" alt="Grundlæggende web">
+                </div>
+
+                <div class="col">
+                    <h3>Designudvikling</h3>
+                    <p>I forbindelse med designet af spillet, skulle vi udvide vores færdigheder i Adobe Illustrator. Vi skulle selv skabe vores egne baggrundsdesigns, spil-elementer og ui-elementer, og disse skulle eksporteres i de rette formater. Dette var en stor udfordring da jeg ikke tidligere har brugt Illustrator, derfor måtte jeg bruge lidt ekstra tid på at se diverse tutorials omkring design af figurer og baggrunde. Jeg lavede et udvidet styletile, der beskriver stil-inspirationen og formgivningen af figurdesignet, samt farver, fonte, typografi m.m. En del af opgaven bestod også af, at man skulle kode en asset-liste i html og css, som skulle indeholde alle ens ui- og spil elementer.</p>
+
+                    <div id="knap_1">
+                        <a href="http://mmd20.dk/kea/04_animation/assets/" target="blank">Se asset-liste</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="section_3">
+            <div class="section_wrapper">
+                <div class="col">
+                    <h3>Opbygning af spil i html, css og javascript</h3>
+                    <p>Da designdelen af spillet var fuldendt, bestod den sidste del af, at kode alle ens elementer i html, css og javascript. Ved hjælp af små øvelser, blev vi gjort opmærksom på, at det var vigtigt at give sine elementer indre og ydre div’er (#sprite og #container). På denne måde kunne man tilføje animationer på #container og #sprite hver for sig, og ligeledes forandre ens elementer i løbet af ens spil. Vi lærte hvordan man ved hjælp af et statemachine-diagram, kunne lave en mere detaljeret oversigt over de aktiviteter, som skulle udføres i sit spil. Denne metode mindede meget om aktivitetsdiagrammet, dog endnu mere detaljeret. Statemachine-diagrammet beskrev hvordan hver ”state” var forbundet, og præcis hvad der kunne lede fra en state til en anden. Det gjorde processen mere overskuelig i forbindelse med at vi skulle til at prøve kræfter af med javascript. Javascript lærte os hvordan man ved hjælp af bl.a. funktioner og variabler kunne udføre en handling til en anden. Vi var nu i stand til, programmere den sidste del af vores spil, så man til sidst kunne klikke og foretage bestemte handlinger i sit spil.</p>
+                    <br>
+
+                    <br>
+                    <h3>Beskrivelse af spil</h3>
+                    <p>Brug sigtekornet til at skyde så mange lerduer som muligt på 30 sekunder. Hver lerdue giver ét point. Undgå at ramme bomberne i blandt lerduerne – man mister ét liv hver gang man rammer en bombe. Man har kun 3 liv!</p>
+
+                    <div id="knap_2">
+                        <a href="http://mmd20.dk/kea/04_animation/spil/index.html" target="blank">Prøv spil</a>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <img src="images/animation_il3.png" alt="Grundlæggende web">
+                </div>
+            </div>
+
+            <div id="previous">
+                <a href="ux.html">Forrige tema</a>
+            </div>
+            <div id="next">
+                <a href="indhold.html">Næste tema</a>
+            </div>
+
+        </section>
+
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    </main>
+
+    <footer>
+        <div id="footer_icons">
+            <a href="https://www.instagram.com/alexrisvad/" target="blank" class="fa fa-instagram" style="font-size: 1.3em;"></a>
+            <a href="https://www.facebook.com/alexanderrisvad/" target="blank" class="fa fa-facebook" style="font-size: 1.3em;"></a>
+        </div>
+
+        <p id="copyrights">© 2021 Alexander Risvad</p>
+    </footer>
+
+    <script src="forside.js"></script>
+</body>
+
+</html>
